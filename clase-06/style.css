@@ -1,0 +1,69 @@
+.segundo {
+    background-color: bisque;
+    color: blue;
+    border: 1px solid;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.segundo:hover {
+    color: aqua;
+    border: 1px solid brown;
+    background-color: white;
+    border-radius: 20px;
+}
+
+input:focus {
+    background-color: burlywood;
+}
+
+h1::before {
+    content: "💖";
+}
+
+h1::after {
+    content: " MUCHO💖";
+    color: plum;
+}
+
+.primero {
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: palevioletred;
+    color: wheat;
+    border: 0px solid;
+    transition: all 0.6s ease 0s;
+    margin: 10px 150px;
+
+    &:hover {
+        background-color: wheat;
+        color: palevioletred;
+        transform: scale(1.2);
+    }
+}
+
+
+.cuadrado {
+    background-color: palegreen;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: white;
+    animation: girar 3s infinite alternate ease-out;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
